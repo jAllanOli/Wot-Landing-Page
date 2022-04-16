@@ -1,0 +1,264 @@
+.intro-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    align-items: center;
+    min-height: 100vh;
+}
+
+.intro-text, .intro-img {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-img img {
+    width: 100%;
+    height: auto;
+}
+
+section div.topic1-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section div p.citation {
+    align-self: flex-end;
+}
+
+section div p.quote{
+    font-style: italic;
+}
+
+section div h2.topic1-title, section div p.topic1-text {
+    text-align: center;
+}
+
+section#aessedai, section#onepower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-content {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -3rem;
+    left: -2rem;
+    transform: rotate(5deg);
+}
+
+.grid-content h2 {
+    margin-bottom: 1rem;
+}
+
+.grid-desc {
+    padding-bottom: 5rem;
+}
+
+.gallery-img {
+    height: 36rem;
+    width: auto;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    transition: all 300ms ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: translate(-3%,3%) scale(1.2) rotate(5deg);
+}
+
+p.pretable {
+    margin-bottom: 5rem;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap)
+}
+
+.form-group {
+    flex: 1 1 40rem;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input, textarea {
+    border: none;
+    background: rgb(221, 216, 216);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 3rem;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button {
+    border: .5rem solid whitesmoke;
+    background: none;
+    color: whitesmoke;
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: white;
+    color: var(--primary-color);
+}
+
+.form-group ::placeholder {
+    color: rgb(184, 181, 181);
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    background-color: rgba(184, 181, 181, 0.308);
+}
+
+footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--secondary-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--forty-color);
+    transform: rotate(-90deg);
+}
+
+@media (max-width:800px) {
+    .intro-content, .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .gallery-img img {
+        width: 100%;
+    }
+
+    section div.topic1-content {
+        width: 75%;
+    }
+
+    .menu {
+        bottom: 0;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: var(--primary-color);
+        color: aliceblue;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 2rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+}

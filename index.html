@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/elements.css">
+    <link rel="stylesheet" href="./assets/css/classes.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body class="main-bg">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">WoT</a></h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#aessedai">Aes Sedai</a></li>
+                    <li><a href="#boys">The Boys</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#onepower">One Power</a></li>
+                    <li><a href="#power">Power Scaling</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text">
+                <h2>The Wheel of Time</h2>
+                <p>First published in 1990, Robert Jordan began an epic series called The Wheel of Time. For the next seventeen years, readers experienced eleven books of rich and expansive storytelling. However, on September 16th, 2007, Robert Jordan passed away due to cardiac amyloidosis. His legacy is carried on by Brandon Sanderson, a fellow fantasy author and Wheel of Time fan. With the help of Harriet Rigney, Robert Jordan's wife and editor, Mr. Sanderson finished the journey over twenty years in the making.</p>
+            </div>
+            <div class="intro-img">
+            <img src="assets/img/logo1.svg" alt="books">
+            </div>
+        </div>
+    </section>
+
+    <section id="aessedai" class="white-bg section">
+        <div class="main-content topic1-content">
+            <h2 class="topic1-title">Aes Sedai</h2>
+            <p class="citation quote">"An Aes Sedai never lies, but the truth she speaks may not be the truth you think you hear."</p>
+            <p class="citation author">—Tam al'Thor</p><br>
+            <p class="topic1-text"> The Aes Sedai (Old Tongue: Servant of All) are women who can channel the One Power, and have been trained in the White Tower of Tar Valon. They have passed the tests for earning both the ring and the shawl and are bound by the Three Oaths. They are the only organization of female channelers in the Westlands (and until recently, they believed themselves to be the only legitimate channeling organization in the known world), giving them a vast amount of power and influence over the nations of the world, providing advisors to kings and queens.
+            Each Aes Sedai belongs to one of the seven Ajahs, with the exception of their leader, the Amyrlin Seat, who is "of all Ajahs and none."</p>
+        </div>       
+    </section>
+
+    <section id="boys" class="boys main-bg section">
+        <div class="main-content grid-content">
+            <h2 class="grid-title">The Boys</h2>
+            <p class="grid-desc">The main three</p>
+            <div class="grid">
+                <article>
+                    <h3>Rand al'Thor</h3>
+                    <p>Rand al'Thor is the Dragon Reborn, the champion of the Light in the battle against the Dark One and one of the main protagonists of the series.</p>
+                </article>
+                <article>
+                    <h3>Perrin Aybara</h3>
+                    <p>Perrin Aybara, also known as Perrin Goldeneyes and Young Bull, is one of the main protagonists in the series. He is a strong ta'veren, a wolfbrother, and has exceptional skills in manipulating Tel'aran'rhiod.</p>
+                </article>
+                <article>
+                    <h3>Matrim Cauthon</h3>
+                    <p>Matrim Cauthon, usually called just Mat, is one of the main characters of the series. He is a powerful ta'veren, although not as powerful as Rand al'Thor.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="white-bg section">
+        <div class="main-content grid-content">
+            <h2 class="grid-title">Gallery</h2>
+            <p class="grid-desc">pictures</p>
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="./assets/img/img1.jpg">
+                </div>
+                <div class="gallery-img">
+                    <img src="./assets/img/img2.jpg">
+                </div>
+                <div class="gallery-img">
+                    <img src="./assets/img/img3.jpg">
+                </div>
+                <div class="gallery-img">
+                    <img src="./assets/img/img4.jpg">
+                </div><div class="gallery-img">
+                    <img src="./assets/img/img5.jpg">
+                </div><div class="gallery-img">
+                    <img src="./assets/img/img6.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="onepower" class="main-bg section">
+        <div class="main-content topic1-content">
+            <h2 class="topic1-title">The One Power</h2>
+            <p class="topic1-text"> It can be seen as a source, quite literally, of energy capable of manipulating the universe, which prolongs the lives of its users by a factor of ten or even more, depending on individual strength. It is never used up by someone channeling it, only woven into a purpose temporarily. Each half of the One Power can be used only by people of the associated sex. The two halves are direct opposites, yet both complement each other, by turning the Wheel of Time through both cooperation and opposition. The essential differences in the nature of the two halves of the Power mean that a woman cannot teach a man to channel, and vice versa.</p>
+        </div>       
+    </section>
+
+    <section class="white-bg section" id="power">
+        <div class="main-content topic1-content">
+            <h2 class="topic1-title">Power Ranking</h2>
+            <p class="topic1-text pretable"> According to The Wheel of Time Companion, which differs to the main books of the WoT in many points, overall strength in the One Power was only a measure of the sheer raw amount of the One Power that an individual could draw at once, which also determined whether or not that individual could create certain weaves. When two channelers compared their strength, this was the factor that was considered. The scale of strength in the One Power consisted of 72 base levels, with 72 being the lowest end of the range, and 1 being the highest. In addition, there were six more levels for men at the high end, ++6 to ++1.</p> 
+            
+            <div class="responsive-table">
+            <table>
+                <caption>Scaling</caption>
+
+                <thead>
+                    <tr>
+                        <th>Level</th>
+                        <th>Chaneller</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>++1</td>
+                        <td>Rand</td>
+                    </tr>
+                    <tr>
+                        <td>++2</td>
+                        <td>Logain</td>
+                    </tr>
+                    <tr>
+                        <td>1(+12)</td>
+                        <td>Lanfear</td>
+                    </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Notes</td>
+                        </tr>
+                    </tfoot>
+            </table>
+            </div>
+        </div> 
+    </section>
+
+    <section id="Contact" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text">
+                <h2>The Wheel of Time</h2>
+                <p>First published in 1990, Robert Jordan began an epic series called The Wheel of Time. For the next seventeen years, readers experienced eleven books of rich and expansive storytelling. However, on September 16th, 2007, Robert Jordan passed away due to cardiac amyloidosis. His legacy is carried on by Brandon Sanderson, a fellow fantasy author and Wheel of Time fan. With the help of Harriet Rigney, Robert Jordan's wife and editor, Mr. Sanderson finished the journey over twenty years in the making.</p>
+            </div>
+            <div class="intro-img">
+            <img src="assets/img/contact.svg" alt="contatos">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+                    <div class="form-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">last name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="emai" id="email" placeholder="Your E-mail">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send message</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer class="white-bg">
+        <p><a rel="nofollo" target="_blank" href="#">Feito com ♥ por Állan</a></p>
+    </footer>
+    <a class="back-to-top" href="#">➤</a>
+</body>
+</html>
